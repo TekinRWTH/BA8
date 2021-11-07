@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/BA2.dir/BA.cpp.o  -o BA2 /opt/ros/kinetic/lib/libfranka.so.0.8.0 -Wl,-rpath,/opt/ros/kinetic/lib 

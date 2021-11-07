@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ita/BA/Publik.cpp
+iostream
+-
+cstdlib
+-
+string
+-
+thread
+-
+atomic
+-
+chrono
+-
+cstring
+-
+mqtt/async_client.h
+/home/ita/BA/mqtt/async_client.h
+
