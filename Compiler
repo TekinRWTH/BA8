@@ -1,0 +1,1 @@
+g++ PublisherTest.cpp -std=c++11 -I /home/ita/BA/libfranka/include -L /home/ita/BA/libfranka/build -lfranka -o libfranka.so.8 -fpic -shared -o klaro -lpthread -lcrypto -lssl -lpaho-mqtt3as -lpaho-mqtpp3
