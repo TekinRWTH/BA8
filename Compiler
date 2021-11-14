@@ -3,3 +3,5 @@ g++ PublisherTest.cpp -std=c++11 -I /home/ita/BA/libfranka/include -L /home/ita/
 Nur Paho mqtt:
 
 g++ Publik2.cpp -std=c++11 -o klaro -lpaho-mqtt3as -lpaho-mqttpp3
+
+https://stackoverflow.com/questions/61359314/publish-array-of-int-as-string-over-mqtt-on-arduino
