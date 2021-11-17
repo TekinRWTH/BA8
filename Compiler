@@ -1,4 +1,4 @@
-g++ PublisherTest.cpp -std=c++11 -I /home/ita/BA/libfranka/include -L /home/ita/BA/libfranka/build -lfranka -o libfranka.so.8 -fpic -shared -o klaro -lpthread -lcrypto -lssl -lpaho-mqtt3as -lpaho-mqttpp3
+g++ PublisherTest.cpp -std=c++11 -I /home/deniz/BA/libfranka/include -L /home/deniz/BA/libfranka/build -lfranka -o libfranka.so.8 -fpic -shared -o klaro -lpthread -lcrypto -lssl -lpaho-mqtt3as -lpaho-mqttpp3
 
 Nur Paho mqtt:
 
