@@ -1065,6 +1065,14 @@ std::string dtheta_4 = std::to_string(dtheta4);
 std::string dtheta_5 = std::to_string(dtheta5);
 std::string dtheta_6 = std::to_string(dtheta6);
 
+std::string m_ee_0 = std::to_string(m_ee);
+
+std::string m_load_0 = std::to_string(m_load);
+
+std::string m_total_0 = std::to_string(m_total);
+
+
+
 
 const int  QOS = 1;
 
@@ -2450,6 +2458,27 @@ int main(int argc, char** argv) {
 	mqtt::message_ptr dtheta6= mqtt::make_message(TOPIC31_6, dtheta_6);
 		dtheta6->set_qos(QOS);
 		client.publish(dtheta6)->wait_for(TIMEOUT);
+
+	
+
+
+
+	mqtt::message_ptr mee= mqtt::make_message(TOPIC4, m_ee_0);
+		mee->set_qos(QOS);
+		client.publish(mee)->wait_for(TIMEOUT);
+
+	
+	
+	
+	mqtt::message_ptr mload= mqtt::make_message(TOPIC6, m_load_0);
+		mload->set_qos(QOS);
+		client.publish(mload)->wait_for(TIMEOUT);
+
+
+
+	mqtt::message_ptr mtotal= mqtt::make_message(TOPIC7, m_total_0);
+		mtotal->set_qos(QOS);
+		client.publish(mtotal)->wait_for(TIMEOUT);
 	
 
 
