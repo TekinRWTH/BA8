@@ -1082,8 +1082,8 @@ const auto TIMEOUT = std::chrono::seconds(10);
 
 
 int main(int argc, char** argv) {
-  string	address  = (argc > 1) ? string(argv[2]) : DFLT_SERVER_ADDRESS,
-			clientID = (argc > 2) ? string(argv[3]) : CLIENT_ID;
+  string	address  = DFLT_SERVER_ADDRESS,
+			clientID = CLIENT_ID;
 
 	mqtt::async_client client(address, clientID, PERSIST_DIR);
 	
