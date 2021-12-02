@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <stdlib.h>
 #include <franka/exception.h>
@@ -19,7 +18,7 @@ using namespace std;
 
 const string DFLT_SERVER_ADDRESS	{ "tcp://localhost:1883" };
 const string CLIENT_ID				{ "paho_cpp_async_publish" };
-const string PERSIST_DIR			{ "./persist" };
+
 
 const char* LWT_PAYLOAD = "Last will and testament.";
 const string TOPIC { "hello" };
@@ -1085,7 +1084,7 @@ int main(int argc, char** argv) {
   string	address  = DFLT_SERVER_ADDRESS,
 			clientID = CLIENT_ID;
 
-	mqtt::async_client client(address, clientID, PERSIST_DIR);
+	mqtt::async_client client(address, clientID);
 	
 
 	auto connOpts = mqtt::connect_options_builder()
