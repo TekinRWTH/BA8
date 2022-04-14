@@ -1,0 +1,2 @@
+${workspaceFolder}/**
+${workspaceFolder}/libfranka/build/_CPack_Packages/amd64/DEB/libfranka-0.8.0-amd64/usr/include/
