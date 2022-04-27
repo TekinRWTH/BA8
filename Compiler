@@ -9,3 +9,9 @@ CMake:
 in BA/build:
 
 cmake -DFranka_DIR=/home/deniz/BA/libfranka/build ..
+
+dann
+
+in BA:
+
+make
